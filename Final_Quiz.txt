@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="en">
+
+<head><meta charset="UTF-8"><title>Anita L. Owens</title></head>
+
+<body>
+
+<header><h1>Anita L. Owens</h1><nav><a href="http://www.dontfeartheinternet.com">One</a> <a href="https://www.fitday.com/fitness/Login.html">Two</a><a href="http://www.amazon.com">Three</a><a href="https://www.hyperisland.com">Hyper Island</a></nav></header>
+
+<section><h2>Favorite Foods</h2><ul><li>Pizza</li><li>Pad Thai</li><li>Crab</li><li>Dark Chocolate</li></ul></section>
+ 
+<section><h2>Achievements</h2>Progress in this course (100%)<progress value="100" max="100"></progress><br>Progress in the Specialization capstone (20%)<progress value="20" max="100"></progress><br>Progress in life goals (70%)<progress value="70" max="100"></progress><br></section>
+ 
+<section><h2>More About Me</h2><details><summary>My Childhood</summary>I grew up in Jacksonville Beach, Florida.  I lived near the beach.  Seven (7) blocks from the beach to be exact.  I really do miss it sometimes.</details></section>
+    
+<footer><p><img src="http://www.intro-webdesign.com/images/newlogo.png"  alt="WD4E Logo">This page was created by Anita Owens &amp; Colleen van Lent.  To learn more about web design, visit <a href="http://www.intro-webdesign.com/">Intro to Web Design.</a></p></footer>
+
+</body>
+</html>
