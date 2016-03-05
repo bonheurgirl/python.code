@@ -3,12 +3,9 @@ largestso = None
 smallestso = None
 
 while True:
-    try:
         num = int(raw_input("Enter a number: "))
         if inp=="done": break
-    except:
-        print "Invalid input"
-        continue
+        
     if smallestso is None:
         snallestso=num
 

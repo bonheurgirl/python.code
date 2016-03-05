@@ -71,7 +71,7 @@ if __name__ == '__main__':
     main()
     
     
-    word='high'
+word='high'
 letter='h'
 def find(word,letter):
     index = 0
@@ -88,6 +88,8 @@ for letter in word:
     if letter == 'a':
         count = count + 1
 print count
+
+
 
 #assign 8-5
 def count(word,letter):
