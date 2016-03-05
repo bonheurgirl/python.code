@@ -1276,7 +1276,7 @@ print "Next Section:  "
 time.sleep(1)
 
 
-from __future__ import division
+#from __future__ import division
 print "Number of Correct Answers:", correctanswers
 print "Number of Wrong Answers:", incorrectanswers
 print int((correctanswers/26) * 100),"%", "score achieved"
