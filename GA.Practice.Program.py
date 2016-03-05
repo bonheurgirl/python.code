@@ -573,6 +573,708 @@ else:
     print "sorry, incorrect."
     incorrectanswers = incorrectanswers + 1
 
+print
+print"""AM2.Channel X has an Assisted/Last Interaction Conversion
+value of exactly 1. Which of the following is true?
+
+a) Channel X equally initiates and assists conversions
+b) Channel X always initiates conversions
+c) Channel X is always the last click before conversion
+d) None of these is true"""
+
+
+am2 = raw_input("Please enter your answer: ")
+
+if am2 == "d" or am2 == "D":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+    
+print """Note: The correct answer would be Channel X
+equally assists and completes conversions."""
+
+
+print
+print"""AM3.In the Linear attribution model...
+
+a) each touchpoint in the conversion path share
+equal credit for the conversion
+
+b) the last touchpoint receives 100% of the 
+credit for the conversion
+
+c) the touchpoints closest in time to the 
+conversion get most of the credit
+
+d) the first touchpoint receives 100% credit
+for the conversion"""
+
+am3 = raw_input("Please enter your answer: ")
+
+if am3 == "a" or am3 == "A":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+    
+    
+print
+print"""AM4.Which of the following most accurately
+describes the concept of attribution in digital
+analytics?
+
+a) calculating cost per click
+b) determining a user’s device
+c) calculating ROI
+d) assigning credit for conversions
+e) determining a traffic source"""
+
+
+am4 = raw_input("Please enter your answer: ")
+
+if am4 == "d" or am4 == "D":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+
+print
+print"""AM5.Which of the following attribution
+models would be useful for evaluating ads and
+campaigns that are designed to create initial
+awareness about a brand?
+
+a) Last Interaction model
+b) Last Non-Direct Click model
+c) Linear model
+d) First Interaction model"""
+
+am5 = raw_input("Please enter your answer: ")
+
+if am5 == "d" or am5 == "D":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+
+print
+print"""AM6.A customer visits your site four
+times in a month before making a $100 purchase
+on your site. She first comes to your site by
+clicking on a search ad, then a social media ad,
+then another search ad, and finally a display ad.
+If you’re using a linear attribution model, how 
+much conversion credit could be assigned to the
+last display ad?
+
+a) $0
+b) $25
+c) $50
+d) $100"""
+
+am6 = raw_input("Please enter your answer: ")
+
+if am6 == "b" or am6 == "B":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+
+print
+print """Note: The conversion credit is calculated
+as follows: purchase value/touch-points in the
+conversion path = 100/4 = 25"""
+
+print
+time.sleep(1)
+print "Number of Correct Answers So far:", correctanswers
+
+time.sleep(2)
+print
+print "Next Section:  Metrics & Dimensions"
+
+time.sleep(1)
+print """MD1.Which of the following suggests a poorly performing landing page?
+a) Bounce Rate > 90%
+b) Bounce Rate < 90%
+c) % New Visits > 90%
+d) % New Visits < 90%
+e) None of these answers"""
+
+md1 = raw_input("Please enter your answer: ")
+
+if md1 == "a" or md1 == "A":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+    
+    
+    
+print
+print"""MD2.Which of the following Behavior metrics
+shows the number of sessions that included a view of a page?
+
+a) Visits
+b) Unique Pageviews
+c) Pageviews
+d) Bounce rate
+e) Unique Visits"""
+
+md2 = raw_input("Please enter your answer: ")
+
+if md2 == "a" or md2 == "A":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+
+
+print
+print"""MD3.Which of the following are valid scopes for dimensions?
+
+a) user level, campaign level, session level, hit level
+b) campaign level, session level, hit level
+c) session level, hit level
+d) none of these answers is correct
+e) user level, session level, hit level"""
+
+md3 = raw_input("Please enter your answer: ")
+
+if md3 == "e" or md3 == "E":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+
+print
+print"""MD4. You want to explore traffic metrics by
+gender and age. Which of the following sections in
+Analytics will be most useful?
+
+a) Behavior
+b) Conversion
+c) Admin
+d) Audience
+e) Acquisition"""
+
+
+md4 = raw_input("Please enter your answer: ")
+
+if md4 == "d" or md4 == "D":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+
+print
+print"""MD5.Which of the following are measures of traffic volume?
+
+a) Avg. Time on Site
+b) Margin
+c) Bounce Rate
+d) Visits"""
+
+
+md5 = raw_input("Please enter your answer: ")
+
+if md5 == "d" or md5 == "D":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+    
+    
+print
+print"""MD6.Which of the following reporting
+dimensions would be useful to reference if
+you were rebuilding a website?
+
+a) Browser
+b) Device category
+c) Language
+d) All of these dimensions
+e) None of these dimensions"""
+
+md6 = raw_input("Please enter your answer: ")
+
+if md4 == "d" or md4 == "D":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+
+print """Note: There also exists a version of this
+question where “device category” is replaced by
+“screen colors”. The answer is of course the same."""
+
+
+print
+print"""MD7.Which of the following metrics shows the
+number of times your ads were displayed?
+
+a) Impressions
+b) CTR
+c) Visits
+d) Clicks
+e) Pageviews"""
+
+md7 = raw_input("Please enter your answer: ")
+
+if md7 == "a" or md7 == "A":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+    
+print
+print"""MD8.Which of the following are dimensions?
+
+a) % New Sessions
+b) Bounce rate
+c) Conversion Rate
+d) Screen resolution
+e) Region
+f) d, e
+g) a, d"""
+
+md8 = raw_input("Please enter your answer: ")
+
+if md8 == "f" or md8 == "F":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+
+print
+print"""MD9.Which of the following are dimensions?
+
+a) Conversion Rate
+b) % New Sessions
+c) Bounce Rate
+d) Region"""
+    
+md9 = raw_input("Please enter your answer: ")
+
+if md9 == "d" or md9 == "D":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+
+
+print
+print"""MD10. The following are examples of dimensions:
+
+(select all that apply)
+
+a) Traffic source
+b) Page name
+c) Country
+d) Unique visitors
+e) a, b, c"""
+
+
+md10 = raw_input("Please enter your answer: ")
+
+if md10 == "e" or md10 == "E":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+
+
+print
+print"""MD11.Your business objective is to maximize
+the number of sales through your website. Which of
+the following metrics would most directly help you
+measure performance against this objective?
+
+a) Ecommerce Conversion Rate
+b) Bounce Rate
+c) Pages/Visit
+d) Visits
+e) Page Value"""
+
+md11 = raw_input("Please enter your answer: ")
+
+if md11 == "a" or md11 == "A":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+
+
+print
+print"""MD12.You want to see conversion rates
+for Windows visits coming from London. Which
+of the following dimensions would you need to select?
+
+a) City, and Goal Conversion Rate as a secondary dimension
+
+b) Operating System, and City as a secondary dimension
+
+c) Goal Conversion Rate, and City as a secondary dimension
+
+d) any one of these options"""
+
+
+
+md12 = raw_input("Please enter your answer: ")
+
+if md12 == "b" or md12 == "A":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+    
+    
+print
+print"""MD13.Which of the following reporting
+tools would you use to show the dimension “city”
+next to the dimension “source” in a report?
+
+a) Date comparison
+b) Table filter
+c) Table sort
+d) Plot rows
+e) Primary dimension
+f) Secondary dimension
+g) Pie chart
+h) Pivot table"""
+    
+md13 = raw_input("Please enter your answer: ")
+
+if md13 == "f" or md13 == "F":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+    
+ 
+print
+print"""MD14. Which of the following metrics would
+be most useful in measuring how many conversions were initiated by Paid Search?
+
+a) Assisted Conversion Value
+b) First Interaction (Click) Conversions
+c) Conversion Rate
+d) None of these metrics"""
+   
+md14 = raw_input("Please enter your answer: ")
+
+if md14 == "b" or md14 == "B":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+
+
+print
+print"""MD15. Which of the following are metrics?
+
+a) City
+b) % New Visits
+c) Pageviews
+d) Browser
+e) b, c"""
+
+md15 = raw_input("Please enter your answer: ")
+
+if md15 == "e" or md15 == "E":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+    
+print
+print"""MD16. The following are examples of metrics:
+
+a) Unique visitors
+b) Page name
+c) Average visit duration
+d) Traffic source
+e) a, c
+f) b, d"""
+   
+md16 = raw_input("Please enter your answer: ")
+
+if md16 == "e" or md16 == "E":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+    
+print
+print"""MD17. Which of the following would be
+most useful for optimizing landing pages?
+
+a) Unique Visits
+b) Unique Pageviews
+c) Visits
+d) Pageviews
+e) Bounce Rate"""
+    
+md17 = raw_input("Please enter your answer: ")
+
+if md17 == "e" or md17 == "E":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+
+
+print
+print"""MD18. Which two metrics below would be the
+best KPIs for measuring the performance of an ecommerce
+business?
+
+a) bounce rate and average session duration
+b) pageviews and revenue
+c) pageviews and bounce rate
+d) revenue and average order value"""
+
+md18 = raw_input("Please enter your answer: ")
+
+if md18 == "d" or md18 == "D":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+   
+print
+print"""MD19. Every metric may be combined with every dimension in Google Analytics.
+
+a) True
+b) False"""
+ 
+md19 = raw_input("Please enter your answer: ")
+
+if md19 == "b" or md19 == "B":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+    
+    
+print
+print"""MD20. You can combine a metric X with a
+dimension Y in Google Analytics
+
+a) as long as sampling is not required
+
+b) if X and Y have been precalculated together in an aggregate table
+
+c) if X and Y are in the same channel grouping
+
+d) if X and Y have the same campaign
+
+e) if X and Y have the same scope"""
+    
+md20 = raw_input("Please enter your answer: ")
+
+if md20 == "e" or md20 == "E":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+    
+print """Explanation: Not every metric can be combined
+with every dimension. Each dimension and metric has a
+scope: users, sessions, or actions. It only makes sense
+to combine dimensions and metrics that share the same scope.
+For example, Sessions is a session-based metric so it can only
+be used with session-level dimensions like Source or City. It
+would not be logical to combine Sessions with an action-level
+(or, hit-level) dimension like Page."""
+    
+
+print
+print"""MD21.  You want to create a report comparing
+the performance of pages on your site and decide to use
+the following dimensions and metrics: Page Title,
+Avg. Visit Duration, Goal 1 Conversion Rate. Which of
+the following statements is true about this report?
+
+a) Google Analytics will allow you to create this report,
+and the report makes sense since you chose to combine
+hit-level metrics with the hit-level dimension Page Title.
+
+b) Google Analytics will allow you to create this report,
+but the report does not make sense since you chose to combine
+session-level metrics with the hit-level dimension Page Title.
+
+c) Google Analytics will not allow you to create this report."""
+
+md21 = raw_input("Please enter your answer: ")
+
+if md21 == "b" or md21 == "B":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+    
+
+
+print
+time.sleep(1)
+print "Number of Correct Answers So far:", correctanswers
+
+time.sleep(2)
+print
+print "Next Section:  Google AdWords"
+
+time.sleep(1)
+
+AW1 = raw_input("Please enter your answer: ")
+
+if AW1 == "e" or AW1 == "E":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+
+
+
+AW2 = raw_input("Please enter your answer: ")
+
+if AW2 == "e" or AW2 == "E":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+    
+AW3 = raw_input("Please enter your answer: ")
+
+if AW3 == "e" or AW3 == "E":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+    
+AW4 = raw_input("Please enter your answer: ")
+
+if AW4 == "e" or AW4 == "E":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+    
+AW5 = raw_input("Please enter your answer: ")
+
+if AW5 == "e" or AW5 == "E":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+    
+    
+AW6 = raw_input("Please enter your answer: ")
+
+if AW6 == "e" or AW6 == "E":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+    
+    
+AW7 = raw_input("Please enter your answer: ")
+
+if AW7 == "e" or AW7 == "E":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+    
+    
+AW8 = raw_input("Please enter your answer: ")
+
+if AW8 == "e" or AW8 == "E":
+    print "correct!"
+    correctanswers = correctanswers + 1
+        
+else:
+    print "sorry, incorrect."
+    incorrectanswers = incorrectanswers + 1
+    
+
+print
+time.sleep(1)
+print "Number of Correct Answers So far:", correctanswers
+
+time.sleep(2)
+print
+print "Next Section:  "
+
+time.sleep(1)
+
 
 from __future__ import division
 print "Number of Correct Answers:", correctanswers
