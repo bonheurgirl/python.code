@@ -1,4 +1,7 @@
 # -*- coding: UTF-8 -*-
+"""This program tests your Google Analytics Knowledge.
+It is meant to be used as extra practice before you take the IQ Exam"""
+
 from __future__ import division
 import time
 
@@ -144,7 +147,9 @@ GK5 = raw_input("Please enter your answer: ")
 if GK5 == "a" or GK5 == "A":
     print "correct!"
     correctanswers = correctanswers + 1
-        
+elif GK5=="s":
+    print "GO TO THE NEXT QUESTION."
+    skipped = skipped + 1      
 else:
     print "sorry, incorrect."
     incorrectanswers = incorrectanswers + 1
@@ -163,7 +168,9 @@ GK6 = raw_input("Please enter your answer: ")
 if GK6 == "c" or GK6 == "C":
     print "correct!"
     correctanswers = correctanswers + 1
-        
+elif GK6=="s":
+    print "GO TO THE NEXT QUESTION."
+    skipped = skipped + 1           
 else:
     print "sorry, incorrect."
     incorrectanswers = incorrectanswers + 1
@@ -184,7 +191,9 @@ GK7 = raw_input("Please enter your answer: ")
 if GK7 == "d" or GK7 == "D":
     print "correct!"
     correctanswers = correctanswers + 1
-        
+elif GK7=="s":
+    print "GO TO THE NEXT QUESTION."
+    skipped = skipped + 1             
 else:
     print "sorry, incorrect."
     incorrectanswers = incorrectanswers + 1
@@ -203,7 +212,9 @@ GK8 = raw_input("Please enter your answer: ")
 if GK8 == "a" or GK8 == "A":
     print "correct!"
     correctanswers = correctanswers + 1
-        
+elif GK8=="s":
+    print "GO TO THE NEXT QUESTION."
+    skipped = skipped + 1             
 else:
     print "sorry, incorrect."
     incorrectanswers = incorrectanswers + 1
@@ -219,7 +230,9 @@ GK9 = raw_input("Please enter your answer: ")
 if GK9 == "a" or GK9 == "A":
     print "correct!"
     correctanswers = correctanswers + 1
-        
+elif GK9=="s":
+    print "GO TO THE NEXT QUESTION."
+    skipped = skipped + 1            
 else:
     print "sorry, incorrect."
     incorrectanswers = incorrectanswers + 1
@@ -474,7 +487,7 @@ if csm3 == "d" or csm3 == "D":
     correctanswers = correctanswers + 1
         
 else:
-    print "sorry, incorrect."
+    print "sorry, incorrect. the answer is D."
     incorrectanswers = incorrectanswers + 1
 
 time.sleep(1)
@@ -3739,6 +3752,9 @@ print
 print"""AT4.  True or False: To collect mobile application data with
 Google Analytics, you should implement the exact same code you use
 for your website tracking.
+a) true
+b) false
+
 """
 AT4 = raw_input("Please enter your answer: ")
 
@@ -3959,7 +3975,7 @@ else:
     
     
 print
-print"""AT13.
+print"""AT13.Press s to go to next question....
 """
 AT13 = raw_input("Please enter your answer: ")
 
@@ -4096,7 +4112,8 @@ score = int((correctanswers/total) * 100)
 
 print score,"%","score achieved" 
 
-#print int((correctanswers/26) * 100),"%", "score achieved"
+print int((correctanswers/171) * 100),"%", "score achieved"
+
 print
 if score >= 78:
     print "Congratulations, You are ready to take the Google Analytics IQ Certification Exam."
