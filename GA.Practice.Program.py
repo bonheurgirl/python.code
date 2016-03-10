@@ -5,10 +5,10 @@ It is meant to be used as extra practice before you take the IQ Exam"""
 from __future__ import division
 import time
 
-correctanswers = 0
-incorrectanswers=0
+correct_answers = 0
+incorrect_answers=0
 skipped=0
-total=(correctanswers+incorrectanswers) - skipped
+total=(correct_answers+incorrect_answers) - skipped
 
 """Sections Covered:
 
@@ -25,13 +25,21 @@ total=(correctanswers+incorrectanswers) - skipped
 11. Events
 12. Goals
 13. Campaign Tracking
-14. Analytics Tracking"""
+14. Analytics Tracking
+15. Platform Principles"""
 
+
+
+name = raw_input("Hello, what's your name?") 
 
 time.sleep(1)
-print """Welcome to the Google Analytics Exam Practice Questions.
-Type "s" to skip any question. Skipped questions will not affect your score. 
-Now, it's time to get started."""
+print "Hi", name
+print "Welcome to the Google Analytics Exam Practice Questions."
+#print "Type 's' to skip any question. Skipped questions will not affect your score."
+
+ 
+time.sleep(1)
+print "It's time to get started."
 
 print
 time.sleep(3)
@@ -52,14 +60,14 @@ GK1 = raw_input("Please enter your answer: ")
 
 if GK1 == "e" or GK1 == "E":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
 
 elif GK1=="s":
     print "GO TO THE NEXT QUESTION."
     skipped = skipped + 1 
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the answer is E."
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -74,15 +82,15 @@ GK2 = raw_input("Please enter your answer: ")
 
 if GK2 == "d" or GK2 == "D":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
     
 elif GK2=="s":
     print "GO TO THE NEXT QUESTION."
     skipped = skipped + 1
         
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the answer is D."
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -100,37 +108,37 @@ GK3 = raw_input("Please enter your answer: ")
 
 if GK3 == "c" or GK3 == "C":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
 elif GK3=="s":
     print "GO TO THE NEXT QUESTION."
     skipped = skipped + 1         
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the answer is C."
+    incorrect_answers = incorrect_answers + 1
 
 print
-print """GK4. It’s important to have a clear measurement strategy to
-guide your implementation strategy and your data
-analysis. Which of the following business objectives
-would be most relevant for content publishers?
+print "GK4. It’s important to have a clear measurement strategy to"
+print "guide your implementation strategy and your data"
+print "analysis. Which of the following business objectives"
+print "would be most relevant for content publishers?"
 
-a) collecting user information for sales teams to connect with potential leads
-b) selling products or services
-c) encourage engagement and frequent visitation
-d) all these options are equally relevant as business objectives for content publishers"""
+print "a) collecting user information for sales teams to connect with potential leads"
+print "b) selling products or services"
+print "c) encourage engagement and frequent visitation"
+print "d) all these options are equally relevant as business objectives for content publishers"
 
 print
 GK4 = raw_input("Please enter your answer: ")
 
 if GK4 == "c" or GK4 == "C":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
 elif GK4=="s":
     print "GO TO THE NEXT QUESTION."
     skipped = skipped + 1         
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the answer is C."
+    incorrect_answers = incorrect_answers + 1
 
 print
 print """GK5. The demographics and interest category
@@ -146,34 +154,34 @@ GK5 = raw_input("Please enter your answer: ")
 
 if GK5 == "a" or GK5 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
 elif GK5=="s":
     print "GO TO THE NEXT QUESTION."
     skipped = skipped + 1      
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the answer is A."
+    incorrect_answers = incorrect_answers + 1
 
 print
-print """GK6.When do Google Analytics Terms of
-Service permit sending personally identifying information (PII) to Google?
+print "GK6. When do Google Analytics Terms of"
+print "Service permit sending personally identifying information (PII) to Google?"
 
-a) when encrypted
-b) in custom campaigns only
-c) never"""
+print "a) when encrypted"
+print "b) in custom campaigns only"
+print "c) never"
 
 
 GK6 = raw_input("Please enter your answer: ")
 
 if GK6 == "c" or GK6 == "C":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
 elif GK6=="s":
     print "GO TO THE NEXT QUESTION."
     skipped = skipped + 1           
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the answer is C."
+    incorrect_answers = incorrect_answers + 1
     
 print
 print """GK7. A visitor comes to your site but stops
@@ -190,13 +198,13 @@ GK7 = raw_input("Please enter your answer: ")
 
 if GK7 == "d" or GK7 == "D":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
 elif GK7=="s":
     print "GO TO THE NEXT QUESTION."
     skipped = skipped + 1             
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the answer is D."
+    incorrect_answers = incorrect_answers + 1
 
 print
 print """GK8. Which of the following would you use to set up a custom alert?
@@ -211,13 +219,13 @@ GK8 = raw_input("Please enter your answer: ")
 
 if GK8 == "a" or GK8 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
 elif GK8=="s":
     print "GO TO THE NEXT QUESTION."
     skipped = skipped + 1             
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the answer is A."
+    incorrect_answers = incorrect_answers + 1
 
 print
 print """GK9. Once your Google Analytics data has been processed, it can not be changed.
@@ -229,32 +237,35 @@ GK9 = raw_input("Please enter your answer: ")
 
 if GK9 == "a" or GK9 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
 elif GK9=="s":
     print "GO TO THE NEXT QUESTION."
     skipped = skipped + 1            
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the answer is A."
+    incorrect_answers = incorrect_answers + 1
 
 
 print
-print """GK10. When Google Analytics processes data, one of the main tasks it completes is organizing hits into:
+print "K10. When Google Analytics processes data, one of the main tasks"
+print "it completes is organizing hits into:"
 
-a) users and sessions
-b) cohorts and interactions
-c) registered users and browsers
-d) purchasers and browsers"""
+print "a) users and sessions"
+print "b) cohorts and interactions"
+print "c) registered users and browsers"
+print "d) purchasers and browsers"
 
 GK10 = raw_input("Please enter your answer: ")
 
 if GK10 == "a" or GK10 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
-        
+    correct_answers = correct_answers + 1
+elif GK10=="s":
+    print "GO TO THE NEXT QUESTION."
+    skipped = skipped + 1               
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the answer is A."
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -269,11 +280,13 @@ GK11 = raw_input("Please enter your answer: ")
 
 if GK11 == "c" or GK11 == "C":
     print "correct!"
-    correctanswers = correctanswers + 1
-        
+    correct_answers = correct_answers + 1
+elif GK11=="s":
+    print "GO TO THE NEXT QUESTION."
+    skipped = skipped + 1                
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the correct answer is C."
+    incorrect_answers = incorrect_answers + 1
 
 print
 print """GK12. By default, an Analytics session ends when inactive for:
@@ -287,11 +300,13 @@ GK12 = raw_input("Please enter your answer: ")
 
 if GK12 == "b" or GK12 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
-        
+    correct_answers = correct_answers + 1
+elif GK12=="s":
+    print "GO TO THE NEXT QUESTION."
+    skipped = skipped + 1                
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the correct answer is B."
+    incorrect_answers = incorrect_answers + 1
 
 print """GK13. You need to immediately find out whether people
 are viewing the new content that you just added today. 
@@ -308,11 +323,13 @@ GK13 = raw_input("Please enter your answer: ")
 
 if GK13 == "a" or GK13 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
-        
+    correct_answers = correct_answers + 1
+elif GK13=="s":
+    print "GO TO THE NEXT QUESTION."
+    skipped = skipped + 1                
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the correct answer is A."
+    incorrect_answers = incorrect_answers + 1
     
     
 print """GK14.Which of the following would you
@@ -329,11 +346,13 @@ GK14 = raw_input("Please enter your answer: ")
 
 if GK14 == "d" or GK14 == "D":
     print "correct!"
-    correctanswers = correctanswers + 1
-        
+    correct_answers = correct_answers + 1
+elif GK14=="s":
+    print "GO TO THE NEXT QUESTION."
+    skipped = skipped + 1                
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the correct answer is D."
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -343,7 +362,8 @@ length in Google Analytics?
 
 a) The games on your site are highly interactive.
 b) A typical session on your site involves filling out at least 3 forms.
-c) The default session timeout length is set dynamically by Google Analytics and you cannot change it.
+c) The default session timeout length is set dynamically by
+Google Analytics and you cannot change it.
 d) The average length of videos on your site is 35 minutes.
 e) The average article on your site takes 4 minutes to read."""
 
@@ -352,16 +372,18 @@ GK15 = raw_input("Please enter your answer: ")
 
 if GK15 == "d" or GK15 == "D":
     print "correct!"
-    correctanswers = correctanswers + 1
-        
+    correct_answers = correct_answers + 1
+elif GK15=="s":
+    print "GO TO THE NEXT QUESTION."
+    skipped = skipped + 1                
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the correct answer is D."
+    incorrect_answers = incorrect_answers + 1
  
 print   
 print """GK16.Which are the four main parts of the Google Analytics platform?
 
-a) Configuration, Prozessing, Reporting, and Recollection
+a) Configuration, Processing, Reporting, and Recollection
 b) Configuration, Collection, Progressing, and Reporting
 c) Collection, Configuration, Processing, and Reporting
 d) Collection, Processing, Continuation, and Reporting"""
@@ -372,11 +394,13 @@ GK16 = raw_input("Please enter your answer: ")
 
 if GK16 == "c" or GK16 == "C":
     print "correct!"
-    correctanswers = correctanswers + 1
-        
+    correct_answers = correct_answers + 1
+elif GK16=="s":
+    print "GO TO THE NEXT QUESTION."
+    skipped = skipped + 1                
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the correct answer is C."
+    incorrect_answers = incorrect_answers + 1
 
 print
 print """GK17.Which of the following is a session level interaction?
@@ -391,11 +415,13 @@ GK17 = raw_input("Please enter your answer: ")
 
 if GK17 == "b" or GK17 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
-        
+    correct_answers = correct_answers + 1
+elif GK17=="s":
+    print "GO TO THE NEXT QUESTION."
+    skipped = skipped + 1                
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the correct answer is B) All these are session level interactions"
+    incorrect_answers = incorrect_answers + 1
     
 
 print   
@@ -411,15 +437,18 @@ GK18 = raw_input("Please enter your answer: ")
 
 if GK18 == "c" or GK18 == "C":
     print "correct!"
-    correctanswers = correctanswers + 1
-        
+    correct_answers = correct_answers + 1
+elif GK18=="s":
+    print "GO TO THE NEXT QUESTION."
+    skipped = skipped + 1                
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the answer is C) All of them are hits tracked by GA."
+    incorrect_answers = incorrect_answers + 1
 
 
 time.sleep(1)
-print "Number of Correct Answers So far:", correctanswers
+print "Number of correct answers so far:", correct_answers
+print "Number of incorrect answers so far:", incorrect_answers
 
 time.sleep(2)
 print
@@ -427,7 +456,7 @@ print "Next Section:  2. Channels, Sources & Mediums"
 
 time.sleep(1)
 print
-print """CSM1.Which of the following are examples of channels?.
+print """CSM1. Which of the following are examples of channels?.
 
 a) Audience
 b) Organic Search
@@ -435,21 +464,29 @@ c) Conversion
 d) Display
 e) Email
 f) c, d, e
-g) a, c, d, e,
-h) a, b, c, d, e
+g) a, c, d, e
+h) a through e
 i) b, d, e """
 
 csm1 = raw_input("Please enter your answer: ")
 
 if csm1 == "i" or csm1 == "I":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
     print "Note: Other channels are Direct, Referral, Paid Search, Social."
-        
+elif csm1=="s":
+    print "GO TO THE NEXT QUESTION."
+    skipped = skipped + 1              
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
-    
+    print "sorry, incorrect. the answer is I) Organic Search, Display, & Email."
+    incorrect_answers = incorrect_answers + 1
+    time.sleep(2)  
+    #definition of Channel
+    print "Channel is a group of several traffic sources from the same medium."
+    print "Channels are in the Acquisition Reports."
+    time.sleep(1)  
+
+
 print
 print """CSM2.Which of the following are examples of Sources?
 
@@ -463,15 +500,20 @@ csm2 = raw_input("Please enter your answer: ")
 
 if csm2 == "c" or csm2 == "C":
     print "correct!"
-    correctanswers = correctanswers + 1
-        
+    correct_answers = correct_answers + 1
+elif csm2=="s":
+    print "GO TO THE NEXT QUESTION."
+    skipped = skipped + 1          
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
-
+    print "sorry, incorrect. the answer is C) All of these are possible Sources."
+    incorrect_answers = incorrect_answers + 1
+    time.sleep(2)  
+    #definition of Source
+    print "Traffic source dimensions. Every referral to a web site has an origin, or source. Possible sources include: “google” (the name of a search engine), “facebook.com” (the name of a referring site), “spring_newsletter” (the name of one of your newsletters), and “direct” (users that typed your URL directly into their browser, or who had bookmarked your site)"
+    time.sleep(1)
 
 print
-print """CSM3.Which of the following are examples of Mediums? Select all that apply.
+print """CSM3. Which of the following are examples of Mediums? Select all that apply.
 
 a) Conversion
 b) Example.com
@@ -484,20 +526,22 @@ csm3 = raw_input("Please enter your answer: ")
 
 if csm3 == "d" or csm3 == "D":
     print "correct!"
-    correctanswers = correctanswers + 1
-        
+    correct_answers = correct_answers + 1
+elif csm3=="s":
+    print "GO TO THE NEXT QUESTION."
+    skipped = skipped + 1  
 else:
     print "sorry, incorrect. the answer is D."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 time.sleep(1)
 print """Note: Other examples are Organic, CPC,
 Referral, None (Direct Traffic). 
 Example.com and Google are Sources."""
 
-
+time.sleep(1)
 print
-print """CSM4.Which of the following are examples of Sources? Select all that apply.
+print """CSM4. Which of the following are examples of Sources? Select all that apply.
 
 a) Email
 b) Example.com
@@ -511,11 +555,12 @@ csm4 = raw_input("Please enter your answer: ")
 
 if csm4 == "g" or csm4 == "G":
     print "correct!"
-    correctanswers = correctanswers + 1
-        
+    correct_answers = correct_answers + 1
+elif csm4=="s":
+    print "GO TO THE NEXT QUESTION."      
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the answer is G) Example.com and Google."
+    incorrect_answers = incorrect_answers + 1
     
 
 print
@@ -529,13 +574,14 @@ e) All of these are default Mediums."""
     
 csm5 = raw_input("Please enter your answer: ")
 
-if csm5 == "d" or csm5 == "G":
+if csm5 == "d" or csm5 == "D":
     print "correct!"
-    correctanswers = correctanswers + 1
-        
+    correct_answers = correct_answers + 1
+elif csm5=="s":
+    print "GO TO THE NEXT QUESTION."        
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the answer is d) email is not a default medium."
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -552,16 +598,17 @@ csm6 = raw_input("Please enter your answer: ")
 
 if csm6 == "e" or csm6 == "E":
     print "correct!"
-    correctanswers = correctanswers + 1
-        
+    correct_answers = correct_answers + 1
+elif csm6=="s":
+    print "GO TO THE NEXT QUESTION."          
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
 print
-print"""CSM7.You are interested in exploring metrics by campaign
-and traffic source. Which of the following sections will havethis report information by default?
+print"""CSM7. You are interested in exploring metrics by campaign
+and traffic source. Which of the following sections will have this report information by default?
 
 a) Behavior
 b) Conversion
@@ -574,28 +621,33 @@ csm7 = raw_input("Please enter your answer: ")
 
 if csm7 == "e" or csm7 == "E":
     print "correct!"
-    correctanswers = correctanswers + 1
-        
+    correct_answers = correct_answers + 1
+elif csm7=="s":
+    print "GO TO THE NEXT QUESTION."          
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
    
 print
-print """Quick Review on Mediums: Google Analytics detects three mediums without any customization.
-● The first default medium is “organic.” It represents traffic that comes from organic, or unpaid, search results.
-● Another default medium is “referral.” Any traffic that comes to your site from another website that’s not a search engine will show up in your reports as a “referral.”
-● The final default medium is “(none).” This medium is applied only for users that come directly to your site by either typing your URL into a browser or clicking on a bookmark. In your reports, you will see these users have a source of “direct” and a medium of “(none)."""
+print "Quick Review on Mediums: Google Analytics detects three mediums without any customization."
+time.sleep(1)
+print "The first default medium is “organic.” It represents traffic that comes from organic, or unpaid, search results."
+time.sleep(1)
+#print "Another default medium is “referral.” Any traffic that comes to your site from another website that’s not a search engine will show up in your reports as a “referral.”
+time.sleep(1)
+print "The final default medium is “(none).” This medium is applied only for users that come directly to your site by either typing your URL into a browser or clicking on a bookmark. In your reports, you will see these users have a source of “direct” and a medium of “(none)."
 #End of Section
 
 time.sleep(1)
-print "Number of Correct Answers So far:", correctanswers
+print "Number of Correct Answers So far:", correct_answers
+print "Number of Incorrect Answers So far:", incorrect_answers
 
 time.sleep(2)
 print
 print "Next Section:  3. Attribution Modeling"
 
 time.sleep(1)
-print """AM1.You’ve found that most of your customers
+print """AM1. You’ve found that most of your customers
 initially learned about your brand via a display ad.
 Which of the following attribution models will give
 credit to display ads that introduced customers to
@@ -613,11 +665,13 @@ am1 = raw_input("Please enter your answer: ")
 
 if am1 == "g" or am1 == "G":
     print "correct!"
-    correctanswers = correctanswers + 1
-        
+    correct_answers = correct_answers + 1
+elif am1=="s":
+    print "GO TO THE NEXT QUESTION."           
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the answer is G)First Interaction attribution model"
+    print "Linear attribution model &  Position Based attribution model"
+    incorrect_answers = incorrect_answers + 1
 
 print
 print"""AM2.Channel X has an Assisted/Last Interaction Conversion
@@ -633,11 +687,12 @@ am2 = raw_input("Please enter your answer: ")
 
 if am2 == "d" or am2 == "D":
     print "correct!"
-    correctanswers = correctanswers + 1
-        
+    correct_answers = correct_answers + 1
+elif am2=="s":
+    print "GO TO THE NEXT QUESTION."            
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the answer is D. "
+    incorrect_answers = incorrect_answers + 1
     
 print """Note: The correct answer would be Channel X
 equally assists and completes conversions."""
@@ -662,11 +717,12 @@ am3 = raw_input("Please enter your answer: ")
 
 if am3 == "a" or am3 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
-        
+    correct_answers = correct_answers + 1
+elif ame=="s":
+    print "GO TO THE NEXT QUESTION."              
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the answer is A."
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -685,11 +741,12 @@ am4 = raw_input("Please enter your answer: ")
 
 if am4 == "d" or am4 == "D":
     print "correct!"
-    correctanswers = correctanswers + 1
-        
+    correct_answers = correct_answers + 1
+elif am4=="s":
+    print "GO TO THE NEXT QUESTION."              
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the answer is D."
+    incorrect_answers = incorrect_answers + 1
 
 print
 print"""AM5.Which of the following attribution
@@ -706,11 +763,12 @@ am5 = raw_input("Please enter your answer: ")
 
 if am5 == "d" or am5 == "D":
     print "correct!"
-    correctanswers = correctanswers + 1
-        
+    correct_answers = correct_answers + 1
+elif am5=="s":
+    print "GO TO THE NEXT QUESTION."              
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the answer is D."
+    incorrect_answers = incorrect_answers + 1
 
 print
 print"""AM6.A customer visits your site four
@@ -731,21 +789,21 @@ am6 = raw_input("Please enter your answer: ")
 
 if am6 == "b" or am6 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
-        
+    correct_answers = correct_answers + 1
+elif am6=="s":
+    print "GO TO THE NEXT QUESTION."              
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
-
+    print "sorry, incorrect. the answer is B."
+    print "Note: The conversion credit is calculated"
+    print "as follows: purchase value/touch-points in the"
+    print "conversion path = 100/4 = 25"
+    incorrect_answers = incorrect_answers + 1
 print
-print """Note: The conversion credit is calculated
-as follows: purchase value/touch-points in the
-conversion path = 100/4 = 25"""
 
 
 print
 print"""AM7. Direct is the traffic source when no other
-traffic source is abailable (e. g. bookmark or directly typed in
+traffic source is available (e. g. bookmark or directly typed in
 browswer)
 
 a) true
@@ -755,13 +813,14 @@ am7 = raw_input("Please enter your answer: ")
 
 if am7 == "a" or am7 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
-        
+    correct_answers = correct_answers + 1
+elif am7=="s":
+    print "GO TO THE NEXT QUESTION."           
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the answer is A."
+    incorrect_answers = incorrect_answers + 1
     
-    
+ #check question   
 print
 print"""AM8.  In the case of a "direct" visit, where visitor
 has a previous source, the previous source gets credit for
@@ -770,16 +829,16 @@ visit.
 a) true
 b) false"""
 
-
 am8 = raw_input("Please enter your answer: ")
 
 if am8 == "b" or am8 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
-        
+    correct_answers = correct_answers + 1
+elif am8=="s":
+    print "GO TO THE NEXT QUESTION."           
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect.  the answer is B."
+    incorrect_answers = incorrect_answers + 1
 #end of Attribution Modeling Section
 
 
@@ -787,14 +846,14 @@ else:
 print
 print
 time.sleep(1)
-print "Number of Correct Answers So far:", correctanswers
-
+print "Number of correct answers So far:", correct_answers
+print "Number of incorrect answers So far:", incorrect_answers
 time.sleep(2)
 print
 print "Next Section: 4.  Metrics & Dimensions"
 
 time.sleep(1)
-print """MD1.Which of the following suggests a poorly performing landing page?
+print """MD1. Which of the following suggests a poorly performing landing page?
 a) Bounce Rate > 90%
 b) Bounce Rate < 90%
 c) % New Visits > 90%
@@ -805,16 +864,17 @@ md1 = raw_input("Please enter your answer: ")
 
 if md1 == "a" or md1 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
-        
+    correct_answers = correct_answers + 1
+elif md1=="s":
+    print "GO TO THE NEXT QUESTION."           
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the answer is A."
+    incorrect_answers = incorrect_answers + 1
     
     
     
 print
-print"""MD2.Which of the following Behavior metrics
+print"""MD2. Which of the following Behavior metrics
 shows the number of sessions that included a view of a page?
 
 a) Visits
@@ -827,13 +887,14 @@ md2 = raw_input("Please enter your answer: ")
 
 if md2 == "a" or md2 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
-        
+    correct_answers = correct_answers + 1
+elif md2=="s":
+    print "GO TO THE NEXT QUESTION."           
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the answer is A."
+    incorrect_answers = incorrect_answers + 1
 
-
+#start here
 print
 print"""MD3.Which of the following are valid scopes for dimensions?
 
@@ -847,11 +908,11 @@ md3 = raw_input("Please enter your answer: ")
 
 if md3 == "e" or md3 == "E":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
-    print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    print "sorry, incorrect. the answer is E."
+    incorrect_answers = incorrect_answers + 1
 
 print
 print"""MD4. You want to explore traffic metrics by
@@ -869,11 +930,11 @@ md4 = raw_input("Please enter your answer: ")
 
 if md4 == "d" or md4 == "D":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 print
 print"""MD5.Which of the following are measures of traffic volume?
@@ -888,11 +949,11 @@ md5 = raw_input("Please enter your answer: ")
 
 if md5 == "d" or md5 == "D":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -910,11 +971,11 @@ md6 = raw_input("Please enter your answer: ")
 
 if md4 == "d" or md4 == "D":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 print """Note: There also exists a version of this
 question where “device category” is replaced by
@@ -935,11 +996,11 @@ md7 = raw_input("Please enter your answer: ")
 
 if md7 == "a" or md7 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
 print
 print"""MD8.Which of the following are dimensions?
@@ -956,11 +1017,11 @@ md8 = raw_input("Please enter your answer: ")
 
 if md8 == "f" or md8 == "F":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 print
 print"""MD9.Which of the following are dimensions?
@@ -974,11 +1035,11 @@ md9 = raw_input("Please enter your answer: ")
 
 if md9 == "d" or md9 == "D":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -998,11 +1059,11 @@ md10 = raw_input("Please enter your answer: ")
 
 if md10 == "e" or md10 == "E":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect. the answer is E."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -1021,11 +1082,11 @@ md11 = raw_input("Please enter your answer: ")
 
 if md11 == "a" or md11 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -1047,11 +1108,11 @@ md12 = raw_input("Please enter your answer: ")
 
 if md12 == "b" or md12 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -1072,11 +1133,11 @@ md13 = raw_input("Please enter your answer: ")
 
 if md13 == "f" or md13 == "F":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
  
 print
@@ -1093,11 +1154,11 @@ md14 = raw_input("Please enter your answer: ")
 
 if md14 == "b" or md14 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect. the answer is B."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -1113,11 +1174,11 @@ md15 = raw_input("Please enter your answer: ")
 
 if md15 == "e" or md15 == "E":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
 print
 print"""MD16. The following are examples of metrics:
@@ -1133,11 +1194,11 @@ md16 = raw_input("Please enter your answer: ")
 
 if md16 == "e" or md16 == "E":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
 print
 print"""MD17. Which of the following would be
@@ -1153,11 +1214,11 @@ md17 = raw_input("Please enter your answer: ")
 
 if md17 == "e" or md17 == "E":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -1174,11 +1235,11 @@ md18 = raw_input("Please enter your answer: ")
 
 if md18 == "d" or md18 == "D":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
    
 print
 print"""MD19. Every metric may be combined with every
@@ -1191,11 +1252,11 @@ md19 = raw_input("Please enter your answer: ")
 
 if md19 == "b" or md19 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -1216,11 +1277,11 @@ md20 = raw_input("Please enter your answer: ")
 
 if md20 == "e" or md20 == "E":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
 print """Explanation: Not every metric can be combined
 with every dimension. Each dimension and metric has a
@@ -1253,17 +1314,17 @@ md21 = raw_input("Please enter your answer: ")
 
 if md21 == "b" or md21 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 #End of Metrics & Dimensions Section    
 
 
 print
 time.sleep(1)
-print "Number of Correct Answers So far:", correctanswers
+print "Number of Correct Answers So far:", correct_answers
 
 time.sleep(2)
 print
@@ -1287,11 +1348,11 @@ AW1 = raw_input("Please enter your answer: ")
 
 if AW1 == "b" or AW1 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 print
 print """AW2. If a paid keyword has an Assisted/Last Click
@@ -1306,11 +1367,11 @@ AW2 = raw_input("Please enter your answer: ")
 
 if AW2 == "c" or AW2 == "C":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 print"""Note: In this example the value is 0.5. That means for example
 5 assists and 10 last click or direct conversions = 5/10 = 0,5. If the
@@ -1333,11 +1394,11 @@ AW3 = raw_input("Please enter your answer: ")
 
 if AW3 == "a" or AW3 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -1357,11 +1418,11 @@ AW4 = raw_input("Please enter your answer: ")
 
 if AW4 == "d" or AW4 == "D":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -1379,11 +1440,11 @@ AW5 = raw_input("Please enter your answer: ")
 
 if AW5 == "a" or AW5 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
 
 print
@@ -1400,11 +1461,11 @@ AW6 = raw_input("Please enter your answer: ")
 
 if AW6 == "c" or AW6 == "C":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 
@@ -1426,11 +1487,11 @@ AW7 = raw_input("Please enter your answer: ")
 
 if AW7 == "e" or AW7 == "E":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
 print
 print"""AW8. Which of the following Google Analytics dimensions
@@ -1452,11 +1513,11 @@ AW8 = raw_input("Please enter your answer: ")
 
 if AW8 == "h" or AW8 == "H":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
  
 print
 print"""AW9.  Adwords has a 30 day window for conversion.
@@ -1470,11 +1531,11 @@ AW9 = raw_input("Please enter your answer: ")
 
 if AW9 == "a" or AW9 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -1489,11 +1550,11 @@ AW10 = raw_input("Please enter your answer: ")
 
 if AW10 == "b" or AW10 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 time.sleep(2)  
 print """AdWords shows the conversion on the date the ad was displayed.
@@ -1502,7 +1563,7 @@ Google Analytics on the date of conversion."""
 
 print
 time.sleep(1)
-print "Number of Correct Answers So far:", correctanswers
+print "Number of Correct Answers So far:", correct_answers
 
 time.sleep(2)
 print
@@ -1525,13 +1586,13 @@ CJ1 = raw_input("Please enter your answer: ")
 
 if CJ1 == "a" or CJ1 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
 elif CJ1=="s":
     print "GO TO THE NEXT QUESTION."
     skipped = skipped + 1         
 else:
     print "sorry, incorrect. the answer is A."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 print
 print"""CJ2. Your Multi-Channel Funnel reports have no
@@ -1547,13 +1608,13 @@ CJ2 = raw_input("Please enter your answer: ")
 
 if CJ2 == "a" or CJ2 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
 elif CJ2=="s":
     print "GO TO THE NEXT QUESTION."
     skipped = skipped + 1        
 else:
     print "sorry, incorrect. the answer is A."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 print
 print"""CJ3. You’ve noticed that many users visit your site several
@@ -1572,11 +1633,11 @@ CJ3 = raw_input("Please enter your answer: ")
 
 if CJ3 == "b" or CJ3 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
 print
 print"""CJ4. What is Bounce Rate?
@@ -1597,11 +1658,11 @@ CJ4 = raw_input("Please enter your answer: ")
 
 if CJ4 == "a" or CJ4 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 
@@ -1630,11 +1691,11 @@ CJ5 = raw_input("Please enter your answer: ")
 
 if CJ5 == "f" or CJ5 == "F":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -1648,11 +1709,11 @@ CJ6 = raw_input("Please enter your answer: ")
 
 if CJ6 == "a" or CJ6 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -1670,11 +1731,11 @@ CJ7 = raw_input("Please enter your answer: ")
 
 if CJ7 == "b" or CJ7 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
 
 print
@@ -1690,16 +1751,16 @@ CJ8 = raw_input("Please enter your answer: ")
 
 if CJ8 == "c" or CJ8 == "C":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 #end of Customer Journey Section
 
 print
 time.sleep(1)
-print "Number of Correct Answers So far:", correctanswers
+print "Number of Correct Answers So far:", correct_answers
 
 time.sleep(2)
 print
@@ -1720,11 +1781,11 @@ AVF1 = raw_input("Please enter your answer: ")
 
 if AVF1 == "a" or AVF1 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 print
 print"""AVF2. Which of the following are possible uses of filters?
@@ -1740,11 +1801,11 @@ AVF2 = raw_input("Please enter your answer: ")
 
 if AVF2 == "e" or AVF2 == "E":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
 print
 print"""AVF3. Why is it important that you maintain
@@ -1763,11 +1824,11 @@ AVF3 = raw_input("Please enter your answer: ")
 
 if AVF3 == "c" or AVF3 == "C":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 
@@ -1787,11 +1848,11 @@ AVF4 = raw_input("Please enter your answer: ")
 
 if AVF4 == "b" or AVF4 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -1817,11 +1878,11 @@ AVF5 = raw_input("Please enter your answer: ")
 
 if AVF5 == "f" or AVF5 == "F":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -1846,11 +1907,11 @@ AVF6 = raw_input("Please enter your answer: ")
 
 if AVF6 == "b" or AVF6 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 print
 print"""AVF7.  Using filters, you can _______.
@@ -1864,11 +1925,11 @@ AVF7 = raw_input("Please enter your answer: ")
 
 if AVF7 == "d" or AVF7 == "D":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
   
 print
@@ -1884,11 +1945,11 @@ AVF8 = raw_input("Please enter your answer: ")
 
 if AVF8 == "d" or AVF8 == "D":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
 print
 print """AVF9. Which of the following statements are true?
@@ -1918,11 +1979,11 @@ AVF9 = raw_input("Please enter your answer: ")
 
 if AVF9 == "g" or AVF9 == "G":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
 print
 print"""AVF10.  Filters can modify the data in
@@ -1942,16 +2003,16 @@ AVF10 = raw_input("Please enter your answer: ")
 
 if AVF10 == "f" or AVF10 == "F":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 #end of Accounts, Views, & Filters    
 
 print
 time.sleep(1)
-print "Number of correct answers so far:", correctanswers
+print "Number of correct answers so far:", correct_answers
 
 time.sleep(2)
 print
@@ -1974,11 +2035,11 @@ R1 = raw_input("Please enter your answer: ")
 
 if R1 == "e" or R1 == "E":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -1999,11 +2060,11 @@ R2 = raw_input("Please enter your answer: ")
 
 if R2 == "d" or R2 == "D":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
 print
 print"""R3. Which of the following Audience reports
@@ -2021,11 +2082,11 @@ R3 = raw_input("Please enter your answer: ")
 
 if R3 == "c" or R3 == "C":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
 
     
@@ -2045,11 +2106,11 @@ R4 = raw_input("Please enter your answer: ")
 
 if R4 == "a" or R4 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -2066,11 +2127,11 @@ R5 = raw_input("Please enter your answer: ")
 
 if R5 == "a" or R5 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -2098,11 +2159,11 @@ R6 = raw_input("Please enter your answer: ")
 
 if R6 == "f" or R6 == "F":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -2132,11 +2193,11 @@ R7 = raw_input("Please enter your answer: ")
 
 if R7 == "g" or R7 == "G":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
     
@@ -2155,11 +2216,11 @@ R8 = raw_input("Please enter your answer: ")
 
 if R8 == "d" or R8 == "D":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 
@@ -2176,11 +2237,11 @@ R9 = raw_input("Please enter your answer: ")
 
 if R9 == "a" or R9 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 
@@ -2200,11 +2261,11 @@ R10 = raw_input("Please enter your answer: ")
 
 if R10 == "g" or R10 == "G":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -2223,11 +2284,11 @@ R11 = raw_input("Please enter your answer: ")
 
 if R11 == "e" or R11 == "E":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -2242,11 +2303,11 @@ R12 = raw_input("Please enter your answer: ")
 
 if R12 == "b" or R12 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 
@@ -2265,11 +2326,11 @@ R13 = raw_input("Please enter your answer: ")
 
 if R13 == "c" or R13 == "C":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -2289,11 +2350,11 @@ R14 = raw_input("Please enter your answer: ")
 
 if R14 == "b" or R14 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
 
 print
@@ -2310,11 +2371,11 @@ R15 = raw_input("Please enter your answer: ")
 
 if R15 == "e" or R15 == "E":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1  
+    incorrect_answers = incorrect_answers + 1  
 
 
 print
@@ -2333,11 +2394,11 @@ R16 = raw_input("Please enter your answer: ")
 
 if R16 == "d" or R16 == "D":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 print
 print"""R17. True or False. It is possible to customize the default
@@ -2351,11 +2412,11 @@ R17 = raw_input("Please enter your answer: ")
 
 if R17 == "a" or R17 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 
@@ -2374,11 +2435,11 @@ R18 = raw_input("Please enter your answer: ")
 
 if R18 == "c" or R18 == "C":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -2396,11 +2457,11 @@ R19 = raw_input("Please enter your answer: ")
 
 if R19 == "f" or R19 == "F":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -2422,11 +2483,11 @@ R20 = raw_input("Please enter your answer: ")
 
 if R20 == "i" or R20 == "I":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 
@@ -2443,11 +2504,11 @@ R21 = raw_input("Please enter your answer: ")
 
 if R21 == "b" or R20 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -2468,11 +2529,11 @@ R22 = raw_input("Please enter your answer: ")
 
 if R22 == "c" or R22 == "C":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
 
 print
@@ -2492,11 +2553,11 @@ R23 = raw_input("Please enter your answer: ")
 
 if R23 == "g" or R23 == "G":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -2515,11 +2576,11 @@ R24 = raw_input("Please enter your answer: ")
 
 if R24 == "g" or R24 == "G":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -2532,11 +2593,11 @@ R24 = raw_input("Please enter your answer: ")
 
 if R24 == "a" or R24 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -2551,11 +2612,11 @@ R26 = raw_input("Please enter your answer: ")
 
 if R26 == "b" or R26 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -2575,17 +2636,17 @@ R27 = raw_input("Please enter your answer: ")
 
 if R27 == "g" or R27 == "G":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 #end of Reports Section
 
 
 print
 time.sleep(1)
-print "Number of Correct Answers So far:", correctanswers
+print "Number of Correct Answers So far:", correct_answers
 
 time.sleep(2)
 print
@@ -2610,11 +2671,11 @@ EC1 = raw_input("Please enter your answer: ")
 
 if EC1 == "e" or EC1 == "E":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 
@@ -2632,11 +2693,11 @@ EC2 = raw_input("Please enter your answer: ")
 
 if EC2 == "b" or EC2 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -2655,11 +2716,11 @@ EC3 = raw_input("Please enter your answer: ")
 
 if EC3 == "b" or EC3 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -2675,11 +2736,11 @@ EC4 = raw_input("Please enter your answer: ")
 
 if EC4 == "a" or EC4 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -2702,11 +2763,11 @@ EC5 = raw_input("Please enter your answer: ")
 
 if EC5 == "b" or EC5 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 print
 print"""Note: The ecommerce conversion rate is calculated
@@ -2727,11 +2788,11 @@ EC6 = raw_input("Please enter your answer: ")
 
 if EC6 == "b" or EC6 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -2747,11 +2808,11 @@ EC7 = raw_input("Please enter your answer: ")
 
 if EC7 == "c" or EC7 == "C":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     print
     
 print"""Note: ROI is calculated like this: revenue minus cost / cost = (5 – 5)/5 = 0/5 = 0"""
@@ -2774,11 +2835,11 @@ EC8 = raw_input("Please enter your answer: ")
 
 if EC8 == "h" or EC8 == "H":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -2795,11 +2856,11 @@ EC9 = raw_input("Please enter your answer: ")
 
 if EC9 == "b" or EC9 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -2829,11 +2890,11 @@ EC10 = raw_input("Please enter your answer: ")
 
 if EC10 == "h" or EC10 == "H":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect. the correct answer is H"
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -2856,11 +2917,11 @@ EC11 = raw_input("Please enter your answer: ")
 
 if EC11 == "e" or EC11 == "E":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect. the answer is e) all the above."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
 print
 print"""EC12.  You must place ecommerce tracking code after standard tracking code.
@@ -2872,16 +2933,16 @@ EC12 = raw_input("Please enter your answer: ")
 
 if EC12 == "a" or EC12 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1  
+    incorrect_answers = incorrect_answers + 1  
 #end of E-Commerce & Conversions Section
 
 print
 time.sleep(1)
-print "Number of Correct Answers So far:", correctanswers
+print "Number of Correct Answers So far:", correct_answers
 
 time.sleep(2)
 print
@@ -2905,11 +2966,11 @@ S1 = raw_input("Please enter your answer: ")
 
 if S1 == "e" or S1 == "E":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1  
+    incorrect_answers = incorrect_answers + 1  
     
     
 
@@ -2928,11 +2989,11 @@ S2 = raw_input("Please enter your answer: ")
 
 if S2 == "a" or S2 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1  
+    incorrect_answers = incorrect_answers + 1  
 
 
 print
@@ -2950,11 +3011,11 @@ S3 = raw_input("Please enter your answer: ")
 
 if S3 == "g" or S3 == "G":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1  
+    incorrect_answers = incorrect_answers + 1  
 
 
 print
@@ -2974,11 +3035,11 @@ S4 = raw_input("Please enter your answer: ")
 
 if S4 == "f" or S4 == "F":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1  
+    incorrect_answers = incorrect_answers + 1  
     
     
 print
@@ -2991,16 +3052,16 @@ S5 = raw_input("Please enter your answer: ")
 
 if S5 == "a" or S5 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1   
+    incorrect_answers = incorrect_answers + 1   
 #End of Segmentation Section
 
 print
 time.sleep(1)
-print "Number of Correct Answers So far:", correctanswers
+print "Number of Correct Answers So far:", correct_answers
 
 time.sleep(2)
 print
@@ -3021,11 +3082,11 @@ E1 = raw_input("Please enter your answer: ")
 
 if E1 == "a" or E1 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1  
+    incorrect_answers = incorrect_answers + 1  
 
 
 print
@@ -3044,11 +3105,11 @@ E2 = raw_input("Please enter your answer: ")
 
 if E2 == "b" or E2 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1 
+    incorrect_answers = incorrect_answers + 1 
 
 
 
@@ -3066,11 +3127,11 @@ E3 = raw_input("Please enter your answer: ")
 
 if E3 == "c" or E3 == "C":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -3094,11 +3155,11 @@ E4 = raw_input("Please enter your answer: ")
 
 if E4 == "c" or E4 == "C":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
 
 print
@@ -3111,11 +3172,11 @@ E5 = raw_input("Please enter your answer: ")
 
 if E4 == "a" or E4 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 print    
 time.sleep(3)
@@ -3129,7 +3190,7 @@ the same URL (because of form submits)."""
 
 print
 time.sleep(5)
-print "Number of Correct Answers So far:", correctanswers
+print "Number of Correct Answers So far:", correct_answers
 
 time.sleep(2)
 print
@@ -3150,11 +3211,11 @@ G1 = raw_input("Please enter your answer: ")
 
 if G1 == "e" or G1 == "E":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -3174,11 +3235,11 @@ G2 = raw_input("Please enter your answer: ")
 
 if G2== "g" or G2 == "G":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
 
 
@@ -3195,11 +3256,11 @@ G3 = raw_input("Please enter your answer: ")
 
 if G3 == "d" or G3 == "D":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
  
  
  
@@ -3217,11 +3278,11 @@ G4 = raw_input("Please enter your answer: ")
 
 if G4 == "e" or G4 == "E":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
 
 print
@@ -3239,11 +3300,11 @@ G5 = raw_input("Please enter your answer: ")
 
 if G5 == "d" or G5 == "D":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 time.sleep(3)
 print
@@ -3280,11 +3341,11 @@ G6 = raw_input("Please enter your answer: ")
 
 if G6== "b" or G6 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
 print
 print"""G7. Your web property is “www.example.com”. 
@@ -3301,11 +3362,11 @@ G7 = raw_input("Please enter your answer: ")
 
 if G7 == "c" or G7 == "C":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
 time.sleep(3)
 print
@@ -3328,11 +3389,11 @@ G8 = raw_input("Please enter your answer: ")
 
 if G8 == "b" or G8 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect. the answer is B."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 print
 print
@@ -3348,11 +3409,11 @@ G9 = raw_input("Please enter your answer: ")
 
 if G9 == "e" or G9 == "E":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect. the answer is E."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -3368,11 +3429,11 @@ G10 = raw_input("Please enter your answer: ")
 
 if G10 == "a" or G10 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect. the answer is A."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -3390,11 +3451,11 @@ G11 = raw_input("Please enter your answer: ")
 
 if G11 == "e" or G11 == "E":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect. the answer is E."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -3410,11 +3471,11 @@ G12 = raw_input("Please enter your answer: ")
 
 if G12 == "a" or G12 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect. the answer is A."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -3430,11 +3491,11 @@ G13 = raw_input("Please enter your answer: ")
 
 if G13 == "d" or G13 == "D":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect. the answer is D."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -3457,11 +3518,11 @@ G14 = raw_input("Please enter your answer: ")
 
 if G14 == "h" or G14 == "H":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect. the answer is H."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -3477,18 +3538,18 @@ G15 = raw_input("Please enter your answer: ")
 
 if G15 == "b" or G15 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect. the answer is B."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 #end of Goals Section
 
     
 print
 print
 time.sleep(1)
-print "Number of Correct Answers So far:", correctanswers
+print "Number of Correct Answers So far:", correct_answers
 
 time.sleep(2)
 print
@@ -3509,11 +3570,11 @@ CT1 = raw_input("Please enter your answer: ")
 
 if CT1 == "a" or CT1 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect. the answer is A."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -3529,11 +3590,11 @@ CT2 = raw_input("Please enter your answer: ")
 
 if CT2 == "e" or CT2 == "E":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect. the answer is E."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -3548,11 +3609,11 @@ CT3 = raw_input("Please enter your answer: ")
 
 if CT3 == "a" or CT3 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect. the answer is A."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
    
 print
@@ -3567,11 +3628,11 @@ CT4 = raw_input("Please enter your answer: ")
 
 if CT4 == "d" or CT4 == "D":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect. the answer is D."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -3587,11 +3648,11 @@ CT5 = raw_input("Please enter your answer: ")
 
 if CT5 == "a" or CT5 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect. the answer is A."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -3615,11 +3676,11 @@ CT6 = raw_input("Please enter your answer: ")
 
 if CT6 == "k" or CT6 == "K":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect. the answer is K."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
 print
 print"""CT7. Which campaign tracking variables should you always use when manually tagging a URL?
@@ -3633,11 +3694,11 @@ CT7 = raw_input("Please enter your answer: ")
 
 if CT7 == "b" or CT7 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect. the answer is B."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -3660,18 +3721,18 @@ CT8 = raw_input("Please enter your answer: ")
 
 if CT8 == "i" or CT8 == "I":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
         
 else:
     print "sorry, incorrect. the answer is I."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 # end of Campaign Tracking Section   
 
 print
 print
 print
 time.sleep(3)
-print "Number of Correct Answers So far:", correctanswers
+print "Number of Correct Answers So far:", correct_answers
 
 time.sleep(2)
 print
@@ -3691,7 +3752,7 @@ AT1 = raw_input("Please enter your answer: ")
 
 if AT1 == "b" or AT1 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
     
 elif AT1=="s":
     print "go to to next question."
@@ -3699,7 +3760,7 @@ elif AT1=="s":
         
 else:
     print "sorry, incorrect. the answer is B."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -3712,7 +3773,7 @@ AT2 = raw_input("Please enter your answer: ")
 
 if AT2 == "a" or AT2 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
     
 elif AT2=="s":
     print "go to to next question."
@@ -3720,7 +3781,7 @@ elif AT2=="s":
         
 else:
     print "sorry, incorrect. the answer is A."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 print
@@ -3737,7 +3798,7 @@ AT3 = raw_input("Please enter your answer: ")
 
 if AT3 == "b" or AT3 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
     
 elif AT3=="s":
     print "go to to next question."
@@ -3745,7 +3806,7 @@ elif AT3=="s":
         
 else:
     print "sorry, incorrect. the answer is B."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -3760,7 +3821,7 @@ AT4 = raw_input("Please enter your answer: ")
 
 if AT4 == "b" or AT4 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
     
 elif AT4=="s":
     print "go to to next question."
@@ -3768,7 +3829,7 @@ elif AT4=="s":
         
 else:
     print "sorry, incorrect. the answer is B."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -3785,7 +3846,7 @@ AT5 = raw_input("Please enter your answer: ")
 
 if AT5 == "e" or AT5 == "E":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
     
 elif AT5=="s":
     print "go to to next question."
@@ -3793,7 +3854,7 @@ elif AT5=="s":
         
 else:
     print "sorry, incorrect. the answer is E."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
     
@@ -3810,7 +3871,7 @@ AT6 = raw_input("Please enter your answer: ")
 
 if AT6 == "c" or AT6 == "C":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
     
 elif AT6=="s":
     print "go to to next question."
@@ -3818,7 +3879,7 @@ elif AT6=="s":
         
 else:
     print "sorry, incorrect. the answer is C."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
     
@@ -3837,7 +3898,7 @@ AT7 = raw_input("Please enter your answer: ")
 
 if AT7 == "f" or AT7 == "F":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
     
 elif AT7=="s":
     print "go to to next question."
@@ -3845,7 +3906,7 @@ elif AT7=="s":
         
 else:
     print "sorry, incorrect. the answer is F."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -3861,7 +3922,7 @@ AT8 = raw_input("Please enter your answer: ")
 
 if AT8 == "b" or AT8 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
     
 elif AT8=="s":
     print "go to to next question."
@@ -3869,7 +3930,7 @@ elif AT8=="s":
         
 else:
     print "sorry, incorrect. the answer is B."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
     
@@ -3887,7 +3948,7 @@ AT9 = raw_input("Please enter your answer: ")
 
 if AT9 == "a" or AT9 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
     
 elif AT9=="s":
     print "go to to next question."
@@ -3895,7 +3956,7 @@ elif AT9=="s":
         
 else:
     print "sorry, incorrect. the answer is A."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
     
@@ -3912,7 +3973,7 @@ AT10 = raw_input("Please enter your answer: ")
 
 if AT10 == "b" or AT10 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
     
 elif AT10=="s":
     print "go to to next question."
@@ -3920,7 +3981,7 @@ elif AT10=="s":
         
 else:
     print "sorry, incorrect. the answer is B."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
     
@@ -3939,7 +4000,7 @@ AT11 = raw_input("Please enter your answer: ")
 
 if AT11 == "f" or AT11 == "F":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
     
 elif AT11=="s":
     print "go to to next question."
@@ -3947,7 +4008,7 @@ elif AT11=="s":
         
 else:
     print "sorry, incorrect. the answer is F."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
     
@@ -3962,7 +4023,7 @@ AT12 = raw_input("Please enter your answer: ")
 
 if AT12 == "b" or AT12 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
     
 elif AT12=="s":
     print "go to to next question."
@@ -3970,7 +4031,7 @@ elif AT12=="s":
         
 else:
     print "sorry, incorrect. the answer is B."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
     
@@ -3981,7 +4042,7 @@ AT13 = raw_input("Please enter your answer: ")
 
 if AT13 == "b" or AT13 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
     
 elif AT13=="s":
     print "go to to next question."
@@ -3989,7 +4050,7 @@ elif AT13=="s":
         
 else:
     print "sorry, incorrect. the answer is ."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -4005,7 +4066,7 @@ AT14 = raw_input("Please enter your answer: ")
 
 if AT14 == "d" or AT14 == "D":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
     
 elif AT14=="s":
     print "go to to next question."
@@ -4013,7 +4074,7 @@ elif AT14=="s":
         
 else:
     print "sorry, incorrect. the answer is D."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
     
     
 print
@@ -4027,7 +4088,7 @@ AT15 = raw_input("Please enter your answer: ")
 
 if AT15 == "a" or AT15 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
     
 elif AT15=="s":
     print "go to to next question."
@@ -4035,7 +4096,7 @@ elif AT15=="s":
         
 else:
     print "sorry, incorrect. the answer is A."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 
@@ -4053,7 +4114,7 @@ AT16 = raw_input("Please enter your answer: ")
 
 if AT16 == "b" or AT16 == "B":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
     
 elif AT16=="s":
     print "go to to next question."
@@ -4061,7 +4122,7 @@ elif AT16=="s":
         
 else:
     print "sorry, incorrect. the answer is B."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
 
 
 
@@ -4078,7 +4139,7 @@ AT17 = raw_input("Please enter your answer: ")
 
 if AT17 == "a" or AT17 == "A":
     print "correct!"
-    correctanswers = correctanswers + 1
+    correct_answers = correct_answers + 1
     
 elif AT17=="s":
     print "go to to next question."
@@ -4086,9 +4147,443 @@ elif AT17=="s":
         
 else:
     print "sorry, incorrect. the answer is A."
-    incorrectanswers = incorrectanswers + 1
+    incorrect_answers = incorrect_answers + 1
+#End of Analytics Tracking Section
 
+
+print
+print
+print
+time.sleep(3)
+print "Number of Correct Answers So far:", correct_answers
+print "Number of Incorrect Answers So far:", incorrect_answers
+
+time.sleep(2)
+print
+print "Next Section:  15. Platform Principles"
+time.sleep(1)
+
+
+#1.2 Platform Fundamentals
+print
+print"""PP1.  During data Processing, Google Analytics:
+
+a) transforms the raw data from Collection using the Configuration settings
+b) collects the data from Analytics tracking code added to a website, mobile application or other digital environment
+c) lets you access and analyze your data using the Reporting interface
+d) lets you adjust Configuration settings before data is collected
+"""
+PP1 = raw_input("Please enter your answer: ")
+
+if PP1 == "a" or PP1 == "A":
+    print "correct!"
+    correct_answers = correct_answers + 1
     
+elif PP1=="s":
+    print "go to to next question."
+    skipped = skipped + 1 
+        
+else:
+    print "sorry, incorrect. the answer is A."
+    incorrect_answers = incorrect_answers + 1
+
+print
+print"""PP2.  Google Analytics is able to measure if a user is a first time visitor or repeat visitor.
+a) True
+b) False
+
+"""
+PP2 = raw_input("Please enter your answer: ")
+
+if PP2 == "a" or PP2 == "A":
+    print "correct!"
+    correct_answers = correct_answers + 1
+    
+elif PP2=="s":
+    print "go to to next question."
+    skipped = skipped + 1 
+        
+else:
+    print "sorry, incorrect. the answer is A."
+    incorrect_answers = incorrect_answers + 1
+
+#1.3 The Data Model
+print
+print"""PP3.  What is the hierarchy of the Google Analytics data model?
+
+a) Interactions > Users > Sessions
+b) Sessions > Users > Interactions
+c) Users > Sessions > Interactions
+d) Sessions > Visitors > Interactions
+
+"""
+PP3 = raw_input("Please enter your answer: ")
+
+if PP3 == "c" or PP3 == "C":
+    print "correct!"
+    correct_answers = correct_answers + 1
+    
+elif PP3=="s":
+    print "go to to next question."
+    skipped = skipped + 1 
+        
+else:
+    print "sorry, incorrect. the answer is C."
+    incorrect_answers = incorrect_answers + 1
+
+
+
+
+print
+print"""PP4. Google Analytics is able to measure if a user is a first time visitor or repeat visitor.
+
+a) True
+b) False
+"""
+PP4 = raw_input("Please enter your answer: ")
+
+if PP4 == "a" or PP4 == "A":
+    print "correct!"
+    correct_answers = correct_answers + 1
+    
+elif PP4=="s":
+    print "go to to next question."
+    skipped = skipped + 1 
+        
+else:
+    print "sorry, incorrect. the answer is A."
+    incorrect_answers = incorrect_answers + 1
+
+
+
+
+print
+print"""PP5.  Which of the following are "hit" types tracked by Google Analytics?
+
+
+a) Pageviews
+b) Reservations
+c) Events
+d) Transactions
+e) All of the above
+f) None of the above
+g) a, b, c
+h) a, c, d
+i) b, c, d
+"""
+PP5 = raw_input("Please enter your answer: ")
+
+if PP5 == "h" or PP5 == "H":
+    print "correct!"
+    correct_answers = correct_answers + 1
+    
+elif PP5=="s":
+    print "go to to next question."
+    skipped = skipped + 1 
+        
+else:
+    print "sorry, incorrect. the answer is H) Pageviews, Events, Transactions."
+    incorrect_answers = incorrect_answers + 1
+
+#2.1 Data Collection Overview
+print
+print"""PP6. The tracking code in Google Analytics:
+
+a) connects data to your specific Google Analytics account
+b) sends data back to your Google Analytics account for reporting
+c) tracks changes in your AdWords account
+d) identifies new and returning users
+e) All of the above
+f) a, b, c
+g) a, b, d
+h) a, c, d
+i) b, c, d
+"""
+PP6 = raw_input("Please enter your answer: ")
+
+if PP6 == "g" or PP6 == "G":
+    print "correct!"
+    correct_answers = correct_answers + 1
+    
+elif PP6=="s":
+    print "go to to next question."
+    skipped = skipped + 1 
+        
+else:
+    print "sorry, incorrect. the answer is G."
+    incorrect_answers = incorrect_answers + 1 
+
+
+
+print
+print"""PP7. The same type of Google Analytics tracking code should be used for both a website and a mobile app.
+
+a) True
+b) False
+
+"""
+PP7 = raw_input("Please enter your answer: ")
+
+if PP7 == "b" or PP7 == "B":
+    print "correct!"
+    correct_answers = correct_answers + 1
+    
+elif PP7=="s":
+    print "go to to next question."
+    skipped = skipped + 1 
+        
+else:
+    print "sorry, incorrect. the answer is B) False."
+    incorrect_answers = incorrect_answers + 1 
+
+
+#2.2 Website Data Collection
+print
+print"""PP8.  You should include Google Analytics tracking code on every page of a website you want to track.
+
+a) True
+b) False
+
+"""
+PP8 = raw_input("Please enter your answer: ")
+
+if PP8 == "a" or PP8 == "A":
+    print "correct!"
+    correct_answers = correct_answers + 1
+    
+elif PP8=="s":
+    print "go to to next question."
+    skipped = skipped + 1 
+        
+else:
+    print "sorry, incorrect. the answer is A) True."
+    incorrect_answers = incorrect_answers + 1 
+
+
+print
+print"""PP9.Where does the Google Analytics tracking code belong?
+
+a) After the closing </head> tag in your HTML
+b) Before the closing </head> tag in your HTML
+c) After the closing </body> tag in your HTML
+d) Before the closing </body> tag in your HTML
+
+"""
+PP9 = raw_input("Please enter your answer: ")
+
+if PP9 == "b" or PP9 == "B":
+    print "correct!"
+    correct_answers = correct_answers + 1
+    
+elif PP9=="s":
+    print "go to to next question."
+    skipped = skipped + 1 
+        
+else:
+    print "sorry, incorrect. the answer is B."
+    incorrect_answers = incorrect_answers + 1 
+
+
+
+print
+print"""PP10.  In order to distinguish between users on web pages, Google Analytics:
+
+a) uses the IP address of a device that accesses the site
+b) uses the city, state and country of a visitor that access the site
+c) creates anonymous unique identifiers using third-party cookies
+d) creates anonymous unique identifiers using first-party cookies
+"""
+PP10 = raw_input("Please enter your answer: ")
+
+if PP10 == "d" or PP10 == "D":
+    print "correct!"
+    correct_answers = correct_answers + 1
+    
+elif PP10=="s":
+    print "go to to next question."
+    skipped = skipped + 1 
+        
+else:
+    print "sorry, incorrect. the answer is D."
+    incorrect_answers = incorrect_answers + 1 
+
+
+#2.3 Mobile app data collection
+
+print
+print"""PP11. For mobile applications, Google Analytics will use the same Javascript tracking code as websites.
+
+a) True
+b) False
+"""
+PP11 = raw_input("Please enter your answer: ")
+
+if PP11 == "b" or PP11 == "B":
+    print "correct!"
+    correct_answers = correct_answers + 1
+    
+elif PP11=="s":
+    print "go to to next question."
+    skipped = skipped + 1 
+        
+else:
+    print "sorry, incorrect. the answer is B) False."
+    incorrect_answers = incorrect_answers + 1 
+
+
+print
+print"""PP12. Google Analytics stores mobile app usage data locally on the device and sends it to the Analytics account later using a batch process called:
+
+a) resending
+b) rerouting
+c) dispatching
+d) displacing
+"""
+PP12 = raw_input("Please enter your answer: ")
+
+if PP12 == "c" or PP12 == "C":
+    print "correct!"
+    correct_answers = correct_answers + 1
+    
+elif PP12=="s":
+    print "go to to next question."
+    skipped = skipped + 1 
+        
+else:
+    print "sorry, incorrect. the answer is C) dispatching"
+    incorrect_answers = incorrect_answers + 1 
+
+
+print
+print"""PP13.  If an app gets uninstalled and then reinstalled, Google Analytics will have to create a new unique identifier on the device instead of matching the session as coming from a returning user.
+
+a) True
+b) False
+"""
+PP13 = raw_input("Please enter your answer: ")
+
+if PP13 == "a" or PP13 == "A":
+    print "correct!"
+    correct_answers = correct_answers + 1
+    
+elif PP13=="s":
+    print "go to to next question."
+    skipped = skipped + 1 
+        
+else:
+    print "sorry, incorrect. the answer is A."
+    incorrect_answers = incorrect_answers + 1 
+
+
+#2.4 Measurement Protocol Data
+
+print
+print"""PP14.  The measurement protocol can collect and send user activity data to Google Analytics from any web-connected device, such as a ticket kiosk.
+
+a) True
+b) False
+"""
+PP14 = raw_input("Please enter your answer: ")
+
+if PP14 == "a" or PP14 == "A":
+    print "correct!"
+    correct_answers = correct_answers + 1
+    
+elif PP14=="s":
+    print "go to to next question."
+    skipped = skipped + 1 
+        
+else:
+    print "sorry, incorrect. the answer is A) True."
+    incorrect_answers = incorrect_answers + 1 
+
+
+
+print
+print"""PP15.  Similar to the JavaScript and mobile SDKs, you’ll need to include a tracking ID with each hit collected by the Measurement Protocol.
+
+a) True
+b) False
+"""
+PP15 = raw_input("Please enter your answer: ")
+
+if PP15 == "a" or PP15 == "A":
+    print "correct!"
+    correct_answers = correct_answers + 1
+    
+elif PP15=="s":
+    print "go to to next question."
+    skipped = skipped + 1 
+        
+else:
+    print "sorry, incorrect. the answer is A) True."
+    incorrect_answers = incorrect_answers + 1 
+
+
+
+#3.1 Proccessing & configuration overview
+
+print
+print"""PP16. 
+"""
+PP16 = raw_input("Please enter your answer: ")
+
+if PP16 == "a" or PP16 == "A":
+    print "correct!"
+    correct_answers = correct_answers + 1
+    
+elif PP16=="s":
+    print "go to to next question."
+    skipped = skipped + 1 
+        
+else:
+    print "sorry, incorrect. the answer is A."
+    incorrect_answers = incorrect_answers + 1 
+
+
+
+print
+print"""PP17. 
+"""
+PP17 = raw_input("Please enter your answer: ")
+
+if PP17 == "a" or PP17 == "A":
+    print "correct!"
+    correct_answers = correct_answers + 1
+    
+elif PP17=="s":
+    print "go to to next question."
+    skipped = skipped + 1 
+        
+else:
+    print "sorry, incorrect. the answer is A."
+    incorrect_answers = incorrect_answers + 1 
+
+
+print
+print"""PP18. 
+"""
+PP18 = raw_input("Please enter your answer: ")
+
+if PP18 == "a" or PP18 == "A":
+    print "correct!"
+    correct_answers = correct_answers + 1
+    
+elif PP18=="s":
+    print "go to to next question."
+    skipped = skipped + 1 
+        
+else:
+    print "sorry, incorrect. the answer is A."
+    incorrect_answers = incorrect_answers + 1 
+
+
+
+
+
+
+
+
 print
 print
 time.sleep(5)
@@ -4097,30 +4592,37 @@ print "Those are all the questions."
 print
 print
 time.sleep(2)
+
+
+print "Wow", name + ",", "you're done!"
 print "Time for the scoring."
 
 
 
 
 print "The total number of questions were", total
-print "Number of correct answers:", correctanswers
-print "Number of wrong answers:", incorrectanswers
-print "Number of Skipped Questions:", skipped
+print "Number of correct answers:", correct_answers
+print "Number of wrong answers:", incorrect_answers
+print "Number of skipped questions:", skipped
 print
 
-score = int((correctanswers/total) * 100)
+try:
+    score = int((correct_answers/total) * 100)
 
-print score,"%","score achieved" 
+    print score,"%","score achieved" 
 
-print int((correctanswers/171) * 100),"%", "score achieved"
-
-print
-if score >= 78:
-    print "Congratulations, You are ready to take the Google Analytics IQ Certification Exam."
-else:
-    print "You may want to complete more practice questions before attempting the Google Analytics IQ Certification Exam."
+    print
+    if score >= 78:
+        print "Congratulations, You are ready to take the Google Analytics IQ Certification Exam."
+    else:
+        print "You may want to complete more practice questions before attempting the Google Analytics IQ Certification Exam."
     
-    
+except:
+    print int((correct_answers/171) * 100),"%", "score achieved"
+    if score >= 78:
+        print "Congratulations, You are ready to take the Google Analytics IQ Certification Exam."
+    else:
+        print "You may want to complete more practice questions before attempting the Google Analytics IQ Certification Exam."  
     
 print "Thank you for completing the Google Analytics Practice Program."
 print "Have a nice day & good luck"

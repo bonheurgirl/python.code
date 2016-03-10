@@ -115,3 +115,15 @@ f(3,2)
 
 
 
+def f(x)
+    print = raw_input("Please enter your answer: ")
+
+    if R1 == "f" or R1 == "F":
+        print "correct!"
+        correctanswers = correctanswers + 1
+        
+    else:
+        print "sorry, incorrect."
+        incorrectanswers = incorrectanswers + 1
+
+
