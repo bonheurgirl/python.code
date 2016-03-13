@@ -1,0 +1,82 @@
+SPEAKER: MICHAEL J. MAHOMETA, Ph.D.
+We've seen how to determine our conditional probabilities
+from a contingency table, and how to use those in conjunction
+with a marginal distribution to determine
+if there is in fact a relationship between two categorical variables.
+But what if you didn't have the conditional probabilities?
+What if you had instead occurrence rates of an event?
+Could you in fact work backwards to find the reverse conditional probability?
+
+Let's put this into context.
+Have you every had to have a medical test?
+Or do you know anyone who has?
+Maybe a test for heart disease or for cancer?
+
+Suppose you get test results that are positive for the disease.
+How should you react?
+A reverse conditional probability - specifically a conditional probability
+tree - can help us make sense of those test results.
+Let's go ahead again and start with a basic question.
+
+Before we get started, there're some basic things that we need to know.
+Medical tests are designed to be good at what
+is Sensitivity, which is the probability of testing positive given
+the presence of a disease.
+Imagine you're in a room with 100 people,
+and they all have a specific disease.
+If your test confirms that 93 of them have the disease,
+then your test is 93% Sensitive or has a Sensitivity rate of 93%.
+Medical tests are also designed to be good at Specificity:
+the probability of testing negative when the disease is in fact not present.
+Now, you might be thinking - Wait a second, that's
+the probability that I want - the Sensitivity,
+the probability of testing positive if you actual have the disease.
+But our question is actually the reverse:
+what's the probability of having the disease given
+that you have a positive test result.
+Your doctor doesn't come in and say "you have this disease."
+Instead they say "you've tested positive for this disease."
+Now that's a big difference.
+As we'll see, testing positive doesn't actually
+guarantee that we have the disease.
+Let's assume that we've tested positive for Lyme Disease.
+It's a fairly rare disease, so we'll say that the percent
+incidence is 1% in the population.
+The Sensitivity of an ELISA test - the test used to determine Lyme Disease
+- is about 88.6%.
+And the Specificity of the test is 98.9%.
+We can use all of these values in our reverse probability tree.
+First, we'll make our initial branches - the incidence rate in the population.
+Here, 1% of the population has Lyme disease and 99% do not.
+Now, we add our corresponding branches to each of the disease possibilities.
+
+The probability of testing positive given the presence of the disease
+- the test of Sensitivity - is 88.6%.
+So testing negative given the presence of the disease is 11.4%.
+Now for the other branches.
+The probability of testing negative when the disease is not present
+- the test Specificity - is 98.9%.
+That makes the probability of testing positive when the disease is not
+present is 1.1% Let's work out all of our "AND" probabilities.
+The probability of having Lyme disease AND the probability of testing positive
+is 0.00886.
+Here are the remaining AND probabilities for the tree.
+Remember our question: What's the the probability of actually having
+a disease given that you've tested positive?
+Here are the two ways that you can test positive
+and their corresponding probabilities.
+If we sum these two disjoint values, we get the probability
+of getting a positive test.
+Now only one of them is because of the presence of the disease.
+So we solve our question with a ratio.
+Here we see the proportion of positive test results
+that are due to the disease, which is the same as having the disease given
+a positive test result.
+That's the probability that we're actually looking for.
+And it's pretty good news: it's 44.9%.
+That means, even with a positive test result,
+the probability of actually having Lyme disease in this case is only 44.9%.
+There's more than a 50% probability that you
+don't have the disease even though you've received a positive test result.
+And that's how conditional probabilities can
+help us get a handle on medical test results.

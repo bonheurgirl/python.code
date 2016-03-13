@@ -1,5 +1,5 @@
 file_name = raw_input('Enter file:')
-if len(file_name) < 1 : file_name = "GA.Practice.Program.py"
+if len(file_name) < 1 : file_name = "prob.txt"
 handle = open(file_name,'r')
 text = handle.read()
 words = text.split()
