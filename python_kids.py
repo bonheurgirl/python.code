@@ -27,9 +27,10 @@ def lots_of_numbers(max):
     #print('it took %s seconds' % (t2-t1))
     print "it took", t3, "seconds"
     
-for x in range(1, 61):
+for x in range(1, 2):
     print(x)
     #time.sleep(1)
     print "all done"
+    
     
     
