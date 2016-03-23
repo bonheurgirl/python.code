@@ -16,7 +16,7 @@ print "max of 3:", max_of_three (num, numb, num3)
 
 
 
-words = ["baby"]
+words = ["baby", "maybe"]
 def string_length():
     length = 0
     for word in words:
