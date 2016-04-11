@@ -1,0 +1,17 @@
+import math
+math.sqrt(5)
+
+from math import pi
+print pi
+
+quotient = 7/3
+print quotient
+
+remainder = 7 % 3
+print remainder
+
+def area(radius):
+    temp = math.pi * radius**2
+    return temp
+
+print area(5)

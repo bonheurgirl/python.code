@@ -25,8 +25,6 @@ text = handle.read()
 text = text.rstrip()
 #print text
 
-
-
 with open(text) as f:
     data=f.readlines()
 f = open('subtitle.text','w')
@@ -42,9 +40,15 @@ with open('subtitle.txt', 'r') as infile:
 # Return a list of the lines, breaking at line boundaries.
 my_list = data.splitlines()
 print my_list
-"""
+
 for line in open("subtitle.txt") :
     print line.rstrip('\n') # .rstrip('\n') removes the line break
-
+    
 for line in open("subtitle.txt"):
     print line.rstrip()
+"""    
+
+file_name = raw_input('Enter file:')
+max(open(file_name), key=len)
+print len
+
