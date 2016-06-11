@@ -60,4 +60,37 @@ for key in prices:
     print x
     total += prices[key] * stock[key]
 print total
+
+
+shopping_list = ["banana", "orange", "apple"]
+
+stock = {
+    "banana": 6,
+    "apple": 0,
+    "orange": 32,
+    "pear": 15
+}
+    
+prices = {
+    "banana": 4,
+    "apple": 2,
+    "orange": 1.5,
+    "pear": 3
+}
+
+def sum(numbers):
+    total=0
+    for number in numbers:
+        total += number
+    return total
+n = [1, 2, 5, 10, 13]
+print sum(n)
+
+def compute_bill(food):
+    total = 0
+    for food in foods:
+        total += food
+    return total
+
+print compute_bill(banana)
     
